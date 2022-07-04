@@ -1,0 +1,113 @@
+.header {
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+
+  padding: 2rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
+
+  background-image: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+}
+
+.title h1 {
+  color: var(--background-color);
+  font-family: var(--highlight-font);
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 0.5rem 0;
+}
+
+.title,
+.search-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.search-div #search {
+  width: 55.5%;
+  background-color: rgba(255, 255, 255, 0.226);
+  color: var(--background-color);
+  font-family: var(--content-font);
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding: 1.25rem;
+  border: none;
+  outline: none;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+}
+
+.search-div #search::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: var(--content-font);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.main-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.main-div h2 {
+  color: var(--highlight-content-color);
+  font-family: var(--highlight-font);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.main-div .article {
+  width: 53vw;
+}
+
+.article {
+  padding: 2rem;
+  background-color: var(--white-color);
+  border-radius: 6px;
+  margin-top: 2rem;
+  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+}
+
+.article p {
+  color: var(--content-color);
+  font-family: var(--highlight-font);
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding: 0.5rem 0;
+}
+
+.article .post-data {
+  color: var(--content-color);
+  font-family: var(--highlight-font);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Footer */
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 1rem 0;
+}
+
+#footer a {
+  color: var(--highlight-content-color);
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  font-weight: bold;
+}

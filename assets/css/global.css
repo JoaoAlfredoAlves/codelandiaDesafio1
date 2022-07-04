@@ -1,0 +1,39 @@
+@import url(styles.css);
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Reset - Browser */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+/* Variables */
+:root {
+  /* Colors */
+  --primary-color: #574ae8;
+  --secondary-color: #3ea1db;
+
+  --white-color: #fff;
+  --background-color: #eeeeee;
+  --highlight-content-color: #1a202c;
+  --content-color: #717171;
+
+  /* Fonts */
+  --highlight-font: "Lexend Deca", sans-serif;
+  --content-font: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--content-font);
+  font-size: 1rem;
+}

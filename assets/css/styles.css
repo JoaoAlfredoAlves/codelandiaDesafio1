@@ -30,6 +30,16 @@
   flex-direction: row;
 }
 
+.search-div {
+  position: relative;
+}
+
+.search-div img {
+  position: absolute;
+  top: 20%;
+  left: 24%;
+}
+
 .search-div #search {
   width: 55.5%;
   background-color: rgba(255, 255, 255, 0.226);
@@ -38,6 +48,7 @@
   font-size: 1.25rem;
   font-weight: 400;
   padding: 1.25rem;
+  padding-left: 5%;
   border: none;
   outline: none;
   margin-bottom: 2rem;
@@ -45,10 +56,16 @@
 }
 
 .search-div #search::placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--white-color);
+  opacity: 0.5;
   font-family: var(--content-font);
   font-size: 1.25rem;
   font-weight: 400;
+  transition: all 300ms ease-in-out;
+}
+
+.search-div #search:focus::placeholder {
+  opacity: 0.8;
 }
 
 .main-div {
@@ -58,6 +75,13 @@
   flex-direction: column;
   gap: 2rem;
   padding: 1rem;
+}
+
+.div-data-heart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main-div h2 {
@@ -77,6 +101,12 @@
   border-radius: 6px;
   margin-top: 2rem;
   box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+
+  transition: all 200ms ease-in-out;
+}
+
+.article:hover {
+  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.26);
 }
 
 .article p {
@@ -94,20 +124,29 @@
   font-weight: 400;
 }
 
+.article img:hover {
+  fill: red;
+}
+
 /* Footer */
 #footer {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem 0 1rem 0;
+  margin-bottom: 1rem;
 }
 
 #footer a {
   color: var(--highlight-content-color);
-  transition: 0.2s ease-in-out;
+  transition: all 200ms ease-in-out;
   text-decoration: none;
+  padding: 1rem;
+  border-radius: 6px;
 }
 
 #footer a:hover {
+  background-color: var(--white-color);
   font-weight: bold;
+  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
 }

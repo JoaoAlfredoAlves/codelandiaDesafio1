@@ -36,4 +36,5 @@ body {
   background-color: var(--background-color);
   font-family: var(--content-font);
   font-size: 1rem;
+  height: 100vh;
 }

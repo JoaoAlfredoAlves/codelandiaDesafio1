@@ -14,20 +14,24 @@
   );
 }
 
-.title h1 {
-  color: var(--background-color);
-  font-family: var(--highlight-font);
-  font-size: 1.5rem;
-  font-weight: 400;
-  padding: 0.5rem 0;
-}
-
 .title,
 .search-div {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
+}
+
+.title {
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.title h1 {
+  color: var(--background-color);
+  font-family: var(--highlight-font);
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 0.5rem 0;
 }
 
 .search-div #search {
